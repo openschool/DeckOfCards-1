@@ -3,20 +3,18 @@
 
 class Card
 {
-  static a = 'something';
-  suitNames = ["spades","diamonds","clubs","hearts"];
-  rankNames = ["ace","two","three","four","five","six","seven","eight","nine","ten","jack","queen","king"]; 
-  constructor(suit,rank)
+  static suitNames = ["spades","diamonds","clubs","hearts"];
+  static rankNames = ["ace","two","three","four","five","six","seven","eight","nine","ten","jack","queen","king"]; 
+  constructor(rank, suit)
   {
-  this.suit = suit;
   this.rank = rank;  
+  this.suit = suit;
   }
   display()
   {
-    return this.rankNames[this.rank] + " of " + this.suitNames[this.suit];
+    return Card.rankNames[this.rank] + " of " + Card.suitNames[this.suit];
   }
 }
 
-let myCard = new Card(3,12);
+let myCard = new Card(12,3);
 console.log(myCard.display());
-console.log(Card.a);
