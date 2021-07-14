@@ -1,5 +1,4 @@
-#x2,#x4
-{
-  font-size:24px;
-  color: red;
+.red {
+  color:red;
+  font-size: 24px;
 }
