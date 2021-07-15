@@ -1,4 +1,19 @@
+.card {
+  width: 60px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+
 .red {
   color:red;
   font-size: 24px;
+}
+
+.card span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-top: 12px;
 }

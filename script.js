@@ -18,24 +18,6 @@ class Card
   }
 }
 
-let myCard = new Card(11,0);
+let myCard = new Card(9,1);
 let output = document.getElementById("x5");
 output.innerHTML=myCard.display();
-/*
-Black Spade Suit
-U+2660
-♤
-U+2664
-Black Heart Suit
-U+2665
-♡
-U+2661
-Black Club Suit
-U+2663
-♧
-U+2667
-Black Diamond Suit
-U+2666
-♢
-U+2662
-*/
