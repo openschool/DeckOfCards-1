@@ -12,12 +12,8 @@ class Card
   this.rank = rank;  
   this.suit = suit;
   }
-  display()
-  {
-    return Card.rankSymbols[this.rank] + " of " + Card.suitCodes[this.suit];
-  }
 
-  display2()
+  display()
   {
     return "<span>" + Card.rankSymbols[this.rank] + "</span>" + Card.suitCodes[this.suit];
   }
@@ -25,9 +21,9 @@ class Card
 
 let myCard = new Card(9,3);
 let output = document.getElementById("x5");
-output.innerHTML=myCard.display2();
+output.innerHTML=myCard.display();
 
 let anotherDisplayedCard = document.createElement("div");
 anotherDisplayedCard.classList.add("card");
-anotherDisplayedCard.innerHTML = myCard.display2();
+anotherDisplayedCard.innerHTML = myCard.display();
 document.body.appendChild(anotherDisplayedCard);
