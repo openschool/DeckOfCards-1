@@ -26,8 +26,17 @@ output.innerHTML=myCard.display();
 let anotherDisplayedCard = document.createElement("div");
 anotherDisplayedCard.classList.add("card");
 anotherDisplayedCard.innerHTML = myCard.display();
+
 let setOfCards = document.getElementById("setOfCards");
-setOfCards.appendChild(anotherDisplayedCard);
+
+let clonedNode = anotherDisplayedCard.cloneNode(true);
+setOfCards.appendChild(clonedNode);
+clonedNode = anotherDisplayedCard.cloneNode(true);
+setOfCards.appendChild(clonedNode);
+clonedNode = anotherDisplayedCard.cloneNode(true);
+setOfCards.appendChild(clonedNode);
+
+
 /*
 next goal is to create three instances of a card, 
 and then get one to display the card, another to display the back of the card, and a third to display a picture underneath all three of the cards.  using multiple css backgrounds.
