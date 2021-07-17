@@ -26,8 +26,8 @@ output.innerHTML=myCard.display();
 let anotherDisplayedCard = document.createElement("div");
 anotherDisplayedCard.classList.add("card");
 anotherDisplayedCard.innerHTML = myCard.display();
-document.body.appendChild(anotherDisplayedCard);
-
+let setOfCards = document.getElementById("setOfCards");
+setOfCards.appendChild(anotherDisplayedCard);
 /*
 next goal is to create three instances of a card, 
 and then get one to display the card, another to display the back of the card, and a third to display a picture underneath all three of the cards.  using multiple css backgrounds.
