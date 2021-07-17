@@ -27,8 +27,8 @@ let anotherDisplayedCard = document.createElement("div");
 anotherDisplayedCard.classList.add("card");
 anotherDisplayedCard.innerHTML = myCard.display();
 document.body.appendChild(anotherDisplayedCard);
-/*
 
+/*
 next goal is to create three instances of a card, 
 and then get one to display the card, another to display the back of the card, and a third to display a picture underneath all three of the cards.  using multiple css backgrounds.
 
@@ -39,5 +39,4 @@ make either the face of card show or the background family picture show through.
 make back of card show as a third option.
 
 https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/
-
 */
