@@ -3,6 +3,7 @@
   height: 90px;
   border: 1px solid black;
   border-radius: 5px;
+  background: white;
 }
 
 
@@ -15,7 +16,9 @@
   width: 100%;
   display: block;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 12px;  
+}
 
-  
+#setOfCards {
+  background-image: url("images/Chrissy.png");
 }
