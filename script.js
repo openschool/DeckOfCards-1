@@ -36,6 +36,9 @@ setOfCards.appendChild(clonedNode);
 clonedNode = anotherDisplayedCard.cloneNode(true);
 setOfCards.appendChild(clonedNode);
 
+/* As for clicks on elements with visibility: hidden, the events are not fired.
+https://stackoverflow.com/questions/5659563/css-is-a-hidden-object-clickable
+*/
 
 /*
 next goal is to create three instances of a card, 
