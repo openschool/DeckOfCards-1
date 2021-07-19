@@ -36,19 +36,24 @@ setOfCards.appendChild(clonedNode);
 clonedNode = anotherDisplayedCard.cloneNode(true);
 setOfCards.appendChild(clonedNode);
 
+alert("hello!");
+
 /* As for clicks on elements with visibility: hidden, the events are not fired.
 https://stackoverflow.com/questions/5659563/css-is-a-hidden-object-clickable
 */
 
-/*
-next goal is to create three instances of a card, 
-and then get one to display the card, another to display the back of the card, and a third to display a picture underneath all three of the cards.  using multiple css backgrounds.
+/** 
+ *    
+var second = document.querySelector(".content a:nth-child(2)")
+console.log(second)
+https://stackoverflow.com/questions/42528100/nth-child-in-javascript
 
-pull in a picture of entire family.  make that the background. 
-
-make either the face of card show or the background family picture show through.
-
-make back of card show as a third option.
-
-https://spin.atomicobject.com/2015/04/07/css-multiple-backgrounds/
-*/
+ * attach eventlistener to the second card.
+ *    1 console.log  "you clicked"
+ *    2 change visibility to hidden
+ *    3 switch from this to event.target
+ *    4 switch eventlistener to containing div
+ *    
+ * 
+ * 
+ * */
