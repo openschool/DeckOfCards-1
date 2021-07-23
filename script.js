@@ -35,27 +35,7 @@ setOfCards.appendChild(clonedNode);
 clonedNode = anotherDisplayedCard.cloneNode(true);
 setOfCards.appendChild(clonedNode);
 
-
-
-/* As for clicks on elements with visibility: hidden, the events are not fired.
-https://stackoverflow.com/questions/5659563/css-is-a-hidden-object-clickable
-*/
-
-/** 
- *    
-https://stackoverflow.com/questions/42528100/nth-child-in-javascript
-
- * attach eventlistener to the second card.
- *   x 1 console.log  "you clicked"
- *   x 2 change visibility to hidden
- *   x 3 switch from this to event.target
- *   x 4 switch eventlistener to containing div
- *    
- * 
- * 
- * */
 let second = document.querySelector('#setOfCards');
-
 second.addEventListener("click", function () 
   {
     event.target.closest('div').style.visibility='hidden';
