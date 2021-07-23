@@ -21,7 +21,6 @@ class Card
 
 let myCard = new Card(9,3);
 let output = document.getElementById("x5");
-output.innerHTML=myCard.display();
 
 let anotherDisplayedCard = document.createElement("div");
 anotherDisplayedCard.classList.add("card");
@@ -49,17 +48,17 @@ https://stackoverflow.com/questions/42528100/nth-child-in-javascript
  * attach eventlistener to the second card.
  *   x 1 console.log  "you clicked"
  *   x 2 change visibility to hidden
- *    3 switch from this to event.target
- *    4 switch eventlistener to containing div
+ *   x 3 switch from this to event.target
+ *   x 4 switch eventlistener to containing div
  *    
  * 
  * 
  * */
-let second = document.querySelector('#setOfCards .card:nth-child(2)');
+let second = document.querySelector('#setOfCards');
 
 second.addEventListener("click", function () 
   {
-    event.target.style.visibility='hidden';
+    event.target.closest('div').style.visibility='hidden';
   }
   );
 
